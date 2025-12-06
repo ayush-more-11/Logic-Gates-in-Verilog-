@@ -15,5 +15,5 @@ This project implements basic logic gates using three modelling styles:
 - XOR
 - XNOR
 
-## Tools Used
+## Tool Used
 - Vivado
