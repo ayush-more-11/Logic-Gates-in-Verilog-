@@ -1,0 +1,99 @@
+//////////////////////////////////////////////////////////////////////////////////
+
+And Gate -
+// Gate Level Modelling 
+module Logic_Gates(output Y, input A, B); 
+  and (Y, A, B); 
+endmodule 
+
+// Data Flow Modelling
+module Logic_Gates(output Y, input A, B);  
+  assign Y = A & B; 
+endmodule 
+
+//Behavioral Modelling 
+module Logic_Gates(output reg Y, input A, B); 
+    always @(*)begin
+    Y = A & B;
+    end 
+endmodule
+
+//////////////////////////////////////////////////////////////////////////////////
+
+OR Gate - 
+// Gate Level Modelling 
+module Logic_Gates(output Y, input A, B); 
+  or (Y, A, B); 
+endmodule 
+
+// Data Flow Modelling 
+module Logic_Gates(output Y, input A, B); 
+  assign Y = A | B;
+endmodule 
+
+//Behavioral Modelling 
+module Logic_Gates(output reg Y, input A, B);
+    always @(*)begin
+    Y = A | B;
+    end 
+endmodule
+
+//////////////////////////////////////////////////////////////////////////////////
+
+NOT Gate -
+// Gate Level Modelling 
+module Logic_Gates(output Y, input A); 
+  not (Y, A); 
+endmodule 
+
+// Data Flow Modelling 
+module Logic_Gates(output Y, input A); 
+  assign Y = ~A;
+endmodule 
+
+//Behavioral Modelling 
+module Logic_Gates(output reg Y, input A);
+    always @(*)begin
+    Y = ~A;
+    end 
+endmodule
+
+//////////////////////////////////////////////////////////////////////////////////
+
+XOR Gate -
+// Gate Level Modelling 
+module Logic_Gates(output Y, input A, B); 
+  xor (Y, A, B); 
+endmodule 
+
+// Data Flow Modelling 
+module Logic_Gates(output Y, input A, B); 
+  assign Y = A ^ B;
+endmodule 
+
+//Behavioral Modelling 
+module Logic_Gates(output reg Y, input A, B);
+    always @(*)begin
+    Y = A ^ B;
+    end 
+endmodule
+
+//////////////////////////////////////////////////////////////////////////////////
+
+XNOR Gate - 
+Gate Level Modelling 
+module Logic_Gates(output Y, input A, B); 
+  xnor (Y, A, B); 
+endmodule 
+
+// Data Flow Modelling 
+module Logic_Gates(output Y, input A, B); 
+  assign Y = ~(A ^ B);
+endmodule 
+
+//Behavioral Modelling 
+module Logic_Gates(output reg Y, input A, B);
+    always @(*)begin
+    Y = ~(A ^ B);
+    end 
+endmodule
